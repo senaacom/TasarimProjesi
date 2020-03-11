@@ -1,0 +1,109 @@
+ŞİREMİ UNUTTUM
+
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace CowteC1
+{
+    public partial class SifremiUnuttum3 : Form
+    {
+        public SifremiUnuttum3()
+        {
+            InitializeComponent();
+        }
+
+        private void btnGdon2_Click(object sender, EventArgs e)
+        {
+            frmGirisYap frm4 = new frmGirisYap();
+            frm4.Show();
+            this.Hide();
+        }
+
+        private void btnKaydet2_Click(object sender, EventArgs e)
+        {
+            SifremiUnuttum4 frm5 = new SifremiUnuttum4();
+            frm5.Show();
+            this.Hide();
+        }
+
+        private void textBox1_Click(object sender, EventArgs e)
+        {
+            textBox1.Clear();
+            textBox1.ForeColor = Color.Black;
+        }
+    }
+}
+
+
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace CowteC1
+{
+    public partial class SifremiUnuttum4 : Form
+    {
+        public SifremiUnuttum4()
+        {
+            InitializeComponent();
+        }
+
+        private void textBox1_Click(object sender, EventArgs e)
+        {
+            textBox1.Clear();
+            textBox1.ForeColor = Color.Black;
+        }
+
+        private void textBox2_Click(object sender, EventArgs e)
+        {
+            textBox2.Clear();
+            textBox2.ForeColor = Color.Black;
+        }
+
+        private void textBox1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                this.ActiveControl = textBox2;
+                textBox2.ForeColor = Color.Black;
+            }
+        }
+
+        private void btnGdon3_Click(object sender, EventArgs e)
+        {
+            frmGirisYap frm6 = new frmGirisYap();
+            frm6.Show();
+            this.Hide();
+        }
+
+        private void btnKaydet3_Click(object sender, EventArgs e)
+        {
+            frmGirisYap frm6 = new frmGirisYap();
+            frm6.Show();
+            this.Hide();
+        }
+
+        private void SifremiUnuttum4_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+    }
+}
